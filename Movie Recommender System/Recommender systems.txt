@@ -1,0 +1,25 @@
+Data collection methods-
+	Explicit-	Provided by used through ratings, preferences.
+	Implicit- Clicks, data streams, search, order histories.
+	
+Recommender types-
+	Simple- Pick most popular.
+	Content based- Based on content similarity.
+		Can use similarity metrics between user profile vector and item vector.
+			Includes cosine similarity, Euclidian distance, Pearson's correlation.
+		Limits recommendations to a narrow range.
+		
+	Collaborative filtering- Based on similarity of users or items.
+		Highly used in industry.
+		User profile similarity based-
+			Get similarity between all users, predict based on users that are sufficiently similar.
+			May predict based on the most similar users, or the similar enough users,
+			or by clustering similar users and then predicting.
+	
+		Item similarity based-
+			Get similarity between items, predict. Better if number of items less than users.
+			
+Cold start-
+	For new additions
+	Visitor cold start- For new user, display popular items.
+	Product cold start- Use content based recommendations at first.
